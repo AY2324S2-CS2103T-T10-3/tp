@@ -3,15 +3,14 @@
   "pages": [
     {
       "src": "AboutUs.md",
-      "title": "About Us",
       "headings": {
         "about-us": "About Us",
-        "project-team": "Project team",
-        "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
-        "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "project-team": "Project Team",
+        "nigel-lee": "Nigel Lee",
+        "han-taewon": "Han Taewon",
+        "max-yang": "Max Yang",
+        "liu-yifan": "Liu Yifan",
+        "yichao-song": "Yichao Song"
       },
       "headingKeywords": {}
     },
