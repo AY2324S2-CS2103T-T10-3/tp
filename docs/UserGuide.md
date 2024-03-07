@@ -1,7 +1,7 @@
 ---
-  layout: default.md
-  title: "User Guide"
-  pageNav: 3
+ layout: default.md
+title: "User Guide"
+pageNav: 3
 ---
 
 # AB-3 User Guide
@@ -52,7 +52,7 @@ AddressBook Level 3 (AB3) is a **desktop app for managing contacts, optimized fo
 
 Removes a participant from the selected event by his/her index.
 
-<box type="warning" seamless>
+<box type="warning" seamless>"
 
 
 **Caution:**
@@ -85,22 +85,21 @@ Removes a participant from the selected event by his/her index.
 
 ## Command summary
 
-Action     | Format, Examples
------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Create event** | `create -ev EVENT_NAME`
-**Delete event** | `delete -ev -ev EVENT_NAME`
-**Select event**   | `select -ev EVENT_NAME`
-**Add new participant**    | `add -n PARTICIPANT_NAME -p PHONE_NUMBER -e EMAIL`
-**Delete participant** | `delete -i INDEX`
-**Add participant to event**  | `add -i INDEX`
-**Remove participant from event**   | `remove -i INDEX 
-**Edit participant**   | `edit-p PARTICIPANT_INDEX -n PARTICIPANT_NAME -p PHONE -e EMAIL`
+| Action                            | Format, Examples                                                 |
+|-----------------------------------|------------------------------------------------------------------|
+ | **Create event**                  | `create -ev EVENT_NAME`                                          |
+| **Select event**                  | `select -ev EVENT_NAME`                                          |
+| **Add new participant**           | `add -n PARTICIPANT_NAME -p PHONE_NUMBER -e EMAIL`               |
+| **Delete participant**            | `delete -i INDEX`                                                |
+| **Add participant to event**      | `add -i INDEX`                                                   |
+| **Remove participant from event** | `remove -i INDEX                                                 |
+| **Edit participant**              | `edit-p PARTICIPANT_INDEX -n PARTICIPANT_NAME -p PHONE -e EMAIL` |
 
 ## Prefix translation table
-Prefix       | Full-name prefix
--------------|-------------
--ev | EVENT_NAME
--n | PARTICIPANT_NAME
--p | PHONE_NUMBER
--e | EMAIL
--i | INDEX
+| Prefix | Full-name prefix   |
+|--------|--------------------|
+ | -ev    | `EVENT_NAME`       |
+| -n     | `PARTICIPANT_NAME` |
+| -p     | `PHONE_NUMBER`     |
+| -e     | `EMAIL`            |
+| -i     | `INDEX`            |
