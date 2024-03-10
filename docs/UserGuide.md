@@ -44,41 +44,60 @@ AddressBook Level 3 (AB3) is a **desktop app for managing contacts, optimized fo
 
 ## Features
 
-### Deleting a participant from the global participant list: `delete`
+### Selecting an event: `sel`
 
-**Format:**`delete -i <index>`
+**Format:**`sel <event index>`
 
 **Description**
 
-Deletes a participant from the global participant list by his/her index.
+Selects an event from the event list by the event index.
 
 <box type="warning" seamless>
 
 **Caution:**
-* `<index>` should be an **integer** no larger than the number of participants in the global participant list.
+* `<event index>` should be an **integer** no larger than the number of events in the event list.
 
 </box>
 
 **Examples:**
-- `delete -i 9` deletes the participant with the index `9`.
+- `sel 3` selects the event with index `3`.
 
-### Selecting an event: `select`
+### Deselecting an event: `desel`
 
-**Format:**`select -ev <event name>`
+**Format:**`desel`
 
 **Description**
 
-Selects an event from the event list by the event name.
+Deselects the selected event and returns to the global participant list.
+
+**Examples:**
+- After `select 3` which selects the event with index `3`, `desel` deselects the event indexed `3`.
+
+### Deleting a participant from the global participant list: `delp`
+
+**Format:**`delp <index>`
+
+**Description**
+- If **no event is selected**, this deletes the participant from both the **global participant list** and **all the 
+events** he/she is in by **his/her index in the global participant list**.
+- If **an event is selected**, this only removes the participant from the event by **his/her index in the 
+event participant list**.
 
 <box type="warning" seamless>
 
 **Caution:**
-* `<event name>` should be **alphanumeric**, **non-empty** and **not longer than 64 characters**.
+* `<index>` should be an **integer**. 
+* A participant's `<index>` in an event participant list can be **different** from that in the global participant list.
+* `<index>` should be no larger than the number of participants in the global participant list if no event is selected.
+* `<index>` should be no larger than the number of participants in the event participant list if an event is selected.
 
 </box>
 
 **Examples:**
-- `select -ev Career fair` selects the event with the name `Career fair`.
+- When no event is selected, `delp 9` deletes the participant with the index `9` completely.
+- `delp 9` after `sel 3` removes the participant with index `9` from event `3`'s participant list.
+
+
 
 --------------------------------------------------------------------------------------------------------------------
 
