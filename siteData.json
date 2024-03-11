@@ -115,7 +115,10 @@
       "headings": {
         "ab-3-user-guide": "AB-3 User Guide",
         "quick-start": "Quick start",
+        "features": "Features",
         "creating-an-event-addev": "Creating an event: addev",
+        "deleting-an-event-delev": "Deleting an event: delev",
+        "adding-participant-and-their-information-to-the-global-participant-list-addp": "Adding participant and their information to the global participant list: addp",
         "faq": "FAQ",
         "known-issues": "Known issues",
         "command-summary": "Command summary"
