@@ -1,8 +1,4 @@
----
-  layout: default.md
-  title: "User Guide"
-  pageNav: 3
----
+
 
 # AB-3 User Guide
 
@@ -51,7 +47,6 @@ AddressBook Level 3 (AB3) is a **desktop app for managing contacts, optimized fo
 
 Adds a new event with the specified name for the Event List.
 
-<box type="warning" seamless>
 
 **Caution:**
 
@@ -71,7 +66,6 @@ Adds a new event with the specified name for the Event List.
 
 Deletes an event and all its relevant information with its index in the event list.
 
-<box type="warning" seamless>
 
 **Caution:**
 * `<index>` should be **numeric** and **non-empty**.
@@ -88,7 +82,6 @@ Deletes an event and all its relevant information with its index in the event li
 
 Adds a new participant to the app, allowing them to be added to an event later.
 
-<box type="warning" seamless>
 
 **Caution:**
 
@@ -101,6 +94,38 @@ Adds a new participant to the app, allowing them to be added to an event later.
 
 - `addp -n David -p 98987676 -e david@example.com` adds a participant named `David` 
 with the phone number `98987676` and email of `david@example.com` to the displayed contacts list.
+
+### Selecting an event: `sel`
+
+**Format:** `sel <index>`
+
+**Description:**
+
+Selects an event with its index in the event list.
+
+
+**Caution:**
+* `<index>` should be **numeric** , **non-empty** and less than the number of events stored in the list.
+
+**Examples:**
+
+- `sel 1` selects the 1st event in the displayed list.
+
+### Deselecting an event: `desel`
+
+**Format:** `desel`
+
+**Description:**
+
+Deselects the event that has currently been selected.
+
+
+**Caution:**
+* This command is applicable only when an event has already been selected by command 'sel'
+
+* **Examples:**
+
+- `desel` deselects selected event and return to the event list.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -119,12 +144,12 @@ with the phone number `98987676` and email of `david@example.com` to the display
 
 ## Command summary
 
-Action     | Format, Examples
------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Add**    | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]…​` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague`
-**Clear**  | `clear`
-**Delete** | `delete INDEX`<br> e.g., `delete 3`
-**Edit**   | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`
-**Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`
-**List**   | `list`
-**Help**   | `help`
+| Action     | Format, Examples                                                                                                                                                      |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Add**    | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]…​` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague` |
+| **Clear**  | `clear`                                                                                                                                                               |
+| **Delete** | `delete INDEX`<br> e.g., `delete 3`                                                                                                                                   |
+| **Edit**   | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`                                           |
+| **Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`                                                                                                            |
+| **List**   | `list`                                                                                                                                                                |
+| **Help**   | `help`                                                                                                                                                                |
