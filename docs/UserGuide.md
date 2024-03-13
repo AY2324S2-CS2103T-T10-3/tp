@@ -46,9 +46,9 @@ AddressBook Level 3 (AB3) is a **desktop app for managing contacts, optimized fo
 
 ### Selecting an event: `sel`
 
-**Format:**`sel <event index>`
+**Format:** `sel <event index>`
 
-**Description**
+**Description:**
 
 Selects an event from the event list by the event index.
 
@@ -64,9 +64,9 @@ Selects an event from the event list by the event index.
 
 ### Deselecting an event: `desel`
 
-**Format:**`desel`
+**Format:** `desel`
 
-**Description**
+**Description:**
 
 Deselects the selected event and returns to the global participant list.
 
@@ -75,9 +75,9 @@ Deselects the selected event and returns to the global participant list.
 
 ### Deleting a participant from the global participant list: `delp`
 
-**Format:**`delp <index>`
+**Format:** `delp <index>`
 
-**Description**
+**Description:**
 - If **no event is selected**, this deletes the participant from both the **global participant list** and **all the 
 events** he/she is in by **his/her index in the global participant list**.
 - If **an event is selected**, this only removes the participant from the event by **his/her index in the 
