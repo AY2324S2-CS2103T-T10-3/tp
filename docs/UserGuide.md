@@ -1,8 +1,8 @@
 
+# Eventy User Guide
 
-# AB-3 User Guide
+**Eventy** is a **desktop app that will help student leaders in NUS manage participants for event planning**  It will include various tags to help student leaders differentiate participants with fields such as dietary restrictions, type of participant, etc. as well as basic fields such as name and email.
 
-AddressBook Level 3 (AB3) is a **desktop app for managing contacts, optimized for use via a  Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, AB3 can get your contact management tasks done faster than traditional GUI apps.
 
 <!-- * Table of Contents -->
 <page-nav-print />
@@ -13,28 +13,24 @@ AddressBook Level 3 (AB3) is a **desktop app for managing contacts, optimized fo
 
 1. Ensure you have Java `11` or above installed in your Computer.
 
-1. Download the latest `addressbook.jar` from [here](https://github.com/se-edu/addressbook-level3/releases).
+2. Download the latest `eventy.jar` from [here](https://github.com/AY2324S2-CS2103T-T10-3/tp).
 
-1. Copy the file to the folder you want to use as the _home folder_ for your AddressBook.
+3. Copy the file to the folder you want to use as the _home folder_ for your AddressBook.
 
-1. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar addressbook.jar` command to run the application.<br>
+4. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar eventy.jar` command to run the application.<br>
    A GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.<br>
    ![Ui](images/Ui.png)
 
-1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
+5. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
    Some example commands you can try:
 
-   * `list` : Lists all contacts.
+   * `addev -ev Orientation camp` : adds a new event with the name `Orientation camp`.
 
-   * `add n/John Doe p/98765432 e/johnd@example.com a/John street, block 123, #01-01` : Adds a contact named `John Doe` to the Address Book.
+   * `addp n/John Doe p/98765432 e/johnd@example.com` : Adds a participant named `John Doe` to the main participant list.
 
-   * `delete 3` : Deletes the 3rd contact shown in the current list.
+   * `del 3` : Deletes the 3rd event shown in the current list.
 
-   * `clear` : Deletes all contacts.
-
-   * `exit` : Exits the app.
-
-1. Refer to the [Features](#features) below for details of each command.
+6. Refer to the [Features](#features) below for details of each command.
 
 --------------------------------------------------------------------------------------------------------------------
 ## Features
@@ -121,9 +117,9 @@ Deselects the event that has currently been selected.
 
 
 **Caution:**
-* This command is applicable only when an event has already been selected by command 'sel'
+* This command is applicable only when an event has already been selected by command `sel`
 
-* **Examples:**
+**Examples:**
 
 - `desel` deselects selected event and return to the event list.
 
@@ -144,12 +140,11 @@ Deselects the event that has currently been selected.
 
 ## Command summary
 
-| Action     | Format, Examples                                                                                                                                                      |
-|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Add**    | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]…​` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague` |
-| **Clear**  | `clear`                                                                                                                                                               |
-| **Delete** | `delete INDEX`<br> e.g., `delete 3`                                                                                                                                   |
-| **Edit**   | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`                                           |
-| **Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`                                                                                                            |
-| **List**   | `list`                                                                                                                                                                |
-| **Help**   | `help`                                                                                                                                                                |
+| Action                             | Format, Examples                                                                                                     |
+|------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **Creating an event**              | `addev -ev <event name>` <br> e.g., `addev -ev orientation`                                                          |
+| **Deleting an event**              | `delev INDEX` <br> e.g., `delev 1`                                                                                   |
+| **Add participant to global list** | `addp -n <participant name> -p <phone number> -e <email>`<br> e.g., `addp -n David -p 98987676 -e david@example.com` |
+| **Selecting an event**             | `sel INDEX`<br> e.g.,`sel 2`                                                                                         |
+| **Deselecting an event**           | `desel`<br> e.g., `desel`                                                                                            |
+                                                                                                                                                             |
