@@ -6,7 +6,9 @@ pageNav: 3
 
 # Eventy User Guide
 
-Eventy is a contact management application, tailored specifically for student event organizers, offers a new standard of streamlined and automated contact organization. It serves as your single source of truth for storing, managing, and retrieving all contact-related information.
+**Eventy** is a **desktop app that will help student leaders in NUS manage participants for event planning**  It will include various tags to help student leaders differentiate participants with fields such as dietary restrictions, type of participant, etc. as well as basic fields such as name and email.
+
+
 
 <!-- * Table of Contents -->
 <page-nav-print />
@@ -17,15 +19,26 @@ Eventy is a contact management application, tailored specifically for student ev
 
 1. Ensure you have Java `11` or above installed in your Computer.
 
-1. Download the latest `eventy.jar` from [here](https://github.com/se-edu/addressbook-level3/releases).
 
-1. Copy the file to the folder you want to use as the _home folder_ for your Eventy.
+2. Download the latest `eventy.jar` from [here](https://github.com/AY2324S2-CS2103T-T10-3/tp).
 
-1. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar eventy.jar` command to run the application.<br>
+3. Copy the file to the folder you want to use as the _home folder_ for your AddressBook.
+
+4. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar eventy.jar` command to run the application.<br>
    A GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.<br>
    ![Ui](images/Ui.png)
 
-1. Refer to the [Features](#features) below for details of each command.
+5. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
+   Some example commands you can try:
+
+   * `addev -ev Orientation camp` : adds a new event with the name `Orientation camp`.
+
+   * `addp n/John Doe p/98765432 e/johnd@example.com` : Adds a participant named `John Doe` to the main participant list.
+
+   * `del 3` : Deletes the 3rd event shown in the current list.
+
+6. Refer to the [Features](#features) below for details of each command.
+
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -39,7 +52,6 @@ Eventy is a contact management application, tailored specifically for student ev
 
 Adds a new event with the specified name for the Event List.
 
-<box type="warning" seamless>
 
 **Caution:**
 
@@ -59,7 +71,6 @@ Adds a new event with the specified name for the Event List.
 
 Deletes an event and all its relevant information with its index in the event list.
 
-<box type="warning" seamless>
 
 **Caution:**
 
@@ -242,6 +253,38 @@ Furthermore, certain edits can cause the AddressBook to behave in unexpected way
 
 _Details coming soon ..._
 
+### Selecting an event: `sel`
+
+**Format:** `sel <index>`
+
+**Description:**
+
+Selects an event with its index in the event list.
+
+
+**Caution:**
+* `<index>` should be **numeric** , **non-empty** and less than the number of events stored in the list.
+
+**Examples:**
+
+- `sel 1` selects the 1st event in the displayed list.
+
+### Deselecting an event: `desel`
+
+**Format:** `desel`
+
+**Description:**
+
+Deselects the event that has currently been selected.
+
+
+**Caution:**
+* This command is applicable only when an event has already been selected by command `sel`
+
+**Examples:**
+
+- `desel` deselects selected event and return to the event list.
+
 --------------------------------------------------------------------------------------------------------------------
 
 ## FAQ
@@ -259,10 +302,12 @@ _Details coming soon ..._
 
 ## Command summary
 
-Action     | Format, Examples
------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Add Event**    | `addev -ev <event name>` <br> e.g., `addev -ev Orientation camp`
-**Delete Event**    | `delev <index>` <br> e.g., `delev 1`
-**Add Participant**    | `addp -n <participant name> -p <phone number> -e <email>` <br> e.g., `addp -n David -p 98987676 -e david@example.com`
-**Invite to Event**    | `invite INDEX` <br> e.g., `invite 5`
 
+| Action                             | Format, Examples                                                                                                     |
+|------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **Creating an event**              | `addev -ev <event name>` <br> e.g., `addev -ev orientation`                                                          |
+| **Deleting an event**              | `delev INDEX` <br> e.g., `delev 1`                                                                                   |
+| **Add participant to global list** | `addp -n <participant name> -p <phone number> -e <email>`<br> e.g., `addp -n David -p 98987676 -e david@example.com` |
+| **Selecting an event**             | `sel INDEX`<br> e.g.,`sel 2`                                                                                         |
+| **Deselecting an event**           | `desel`<br> e.g., `desel`                                                                                            |
+                                                                                                                                                             |
