@@ -90,14 +90,6 @@
       "headingKeywords": {}
     },
     {
-      "src": "README.md",
-      "headings": {
-        "eventy": "Eventy",
-        "what-does-this-do": "What does this do"
-      },
-      "headingKeywords": {}
-    },
-    {
       "src": "SettingUp.md",
       "title": "Setting up and getting started",
       "headings": {
