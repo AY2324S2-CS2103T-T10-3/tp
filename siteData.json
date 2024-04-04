@@ -127,7 +127,7 @@
         "deselecting-an-event-desel": "Deselecting an event: desel",
         "deleting-a-participant-from-the-global-participant-list-or-an-event-participant-list-delp": "Deleting a participant from the global participant list or an event participant list: delp",
         "editing-existing-participant-editp": "Editing existing participant: editp",
-        "inviting-participant-to-selected-event-inv": "Inviting participant to selected event: inv",
+        "inviting-person-to-selected-event-inv": "Inviting person to selected event: inv",
         "exporting-the-chosen-details-of-all-the-filtered-persons-to-a-csv-file": "Exporting the chosen details of all the filtered persons to a CSV file.",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "locating-persons-by-name-find": "Locating persons by name: find",
