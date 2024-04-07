@@ -185,7 +185,8 @@ Deselects the selected event and returns to the global participant list.
 
 **Description:**
 
-- If **no event is selected**, this deletes the person from both the **global participant list**.
+- If **no event is selected**, this deletes the person from only the **global participant list**, but the person will
+remain in all the events he/she will be taking or has taken part in. 
 - If **an event is selected**, this only removes the participant from the event by **his/her index in the
   event participant list**.
 
@@ -265,13 +266,15 @@ After:
 
 ![after inviting participant](images/afterinvite.png)
 
-### Exporting the chosen details of all the filtered persons to a CSV file.
+### Exporting the chosen details of all the filtered persons to a CSV file: `export`
 
 **Format:** `export n/ p/ e/ a/`
 
 **Description:**
 
-Exports only the chosen details of all filtered persons to a CSV file.
+Exports only the chosen details of all filtered persons to a CSV file. Currently, the command only supports the export
+of name, phone, email and address. The command will not support the export of tags due to privacy concerns and rare
+usage. The exported information will be in the file `exported_participant_data.csv`.
 
 <box type="warning" seamless>
 
@@ -279,7 +282,14 @@ Exports only the chosen details of all filtered persons to a CSV file.
 
 * At least one of the optional fields must be provided.
 * `n/ p/ e/ a/` provided should be in **prefix**.
-* `Prefix` only recognize the four prefixes written above. Do not input any other unknown prefixes.
+* `Prefix` only recognizes the four prefixes written above. Any other unknown prefixes will be disregarded.
+* Make sure the `.csv` file is opened using the Notepad app or the equivalent. Using Microsoft Excel to open the `.csv`
+file will cause unexpected behaviors due to Excel interpreting certain fields as numbers. For Example, Excel will
+recognize the phone number `00000000` as `0`.
+* Another `export` will overwrite the file created by the previous `export`, so make sure to save the old
+`exported_participant_data.csv` somewhere else before doing another `export`.
+* Do not have the `exported_participant_data.csv` file opened while exporting, as this will cause Eventy to be unable to
+overwrite the file.
   </box>
   
 **Examples:**
