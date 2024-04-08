@@ -7,6 +7,7 @@ import java.util.function.Predicate;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import seedu.address.commons.core.GuiSettings;
+import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.event.Event;
 import seedu.address.model.person.Person;
 
@@ -161,7 +162,7 @@ public interface Model {
     /**
      * Deselects the currently selected event.
      */
-    void deselectEvent();
+    void deselectEvent() throws CommandException;
 
     /**
      * Checks if a person is part of the currently selected event.

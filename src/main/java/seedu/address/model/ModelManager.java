@@ -15,6 +15,7 @@ import seedu.address.commons.core.GuiSettings;
 import seedu.address.commons.core.LogsCenter;
 import seedu.address.export.PersonDataExporter;
 import seedu.address.export.PersonExporter;
+import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.event.Event;
 import seedu.address.model.person.Person;
 
@@ -227,9 +228,13 @@ public class ModelManager implements Model {
     }
 
     @Override
-    public void deselectEvent() {
-        eventBook.deselectEvent();
-        updateFilteredPersonListOfSelectedEvent(PREDICATE_SHOW_ALL_PERSONS);
+    public void deselectEvent() throws CommandException {
+        if (this.isAnEventSelected()) {
+            eventBook.deselectEvent();
+            updateFilteredPersonListOfSelectedEvent(PREDICATE_SHOW_ALL_PERSONS);
+        } else {
+            throw new CommandException("No event is currently selected!");
+        }
     }
 
     @Override
