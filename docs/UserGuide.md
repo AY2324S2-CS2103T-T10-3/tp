@@ -179,6 +179,12 @@ Deselects the selected event and returns to the global participant list.
 
 - After `select 3` which selects the event with index `3`, `desel` deselects the event indexed `3`.
 
+<box type="warning" seamless>
+
+**Caution:**
+* An event needs to be currently selected for `desel` command to execute, or else `desel` shows "No event is currently selected!" error message.
+</box>
+
 ### Deleting a participant from the global participant list or an event participant list: `delp`
 
 **Format:** `delp <participant index>`
