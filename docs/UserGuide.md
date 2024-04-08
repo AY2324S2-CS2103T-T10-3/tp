@@ -284,7 +284,7 @@ usage. The exported information will be in the file `exported_participant_data.c
 * `n/ p/ e/ a/` provided should be in **prefix**.
 * `Prefix` only recognizes the four prefixes written above. Any other unknown prefixes will be disregarded.
 * Make sure the `.csv` file is opened using the Notepad app or the equivalent. Using Microsoft Excel to open the `.csv`
-file will cause unexpected behaviors due to Excel interpreting certain fields as numbers. For Example, Excel will
+file will cause unexpected behaviors due to Excel interpreting certain fields as numbers. For example, Excel will
 recognize the phone number `00000000` as `0`.
 * Another `export` will overwrite the file created by the previous `export`, so make sure to save the old
 `exported_participant_data.csv` somewhere else before doing another `export`.
