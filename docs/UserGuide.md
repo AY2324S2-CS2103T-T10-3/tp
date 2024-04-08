@@ -329,7 +329,7 @@ Clears all entries from the address book.
 **Caution:**
 
 * `<KEYWORD>` name should be **alphabetic**, **non-empty** and **not longer than 64 characters**.
-* `<KEYWORD>` tag should be **alphabetic**, **non-empty** and **not longer than 64 characters**.
+* `<KEYWORD>` tag in find command should be **alphabetic**, **non-empty** and **not longer than 64 characters**.
   </box>
 
 **Examples:**
