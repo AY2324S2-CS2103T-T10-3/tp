@@ -132,6 +132,7 @@ Adds a new person to the app, allowing them to be added to an event later.
 * `<phone number>` should be **numeric**, **non-empty** and **not longer than 15 digits**.
 * `<email>` should be **alphanumeric**, **non-empty** and **not longer than 64 characters**.
 * `<address>` should be **non-empty** and **not longer than 64 characters**.
+* `<tag>` should be **not longer than 64 characters**.
 * Adding a person with the same **name**(Case-sensitive) that already exists, regardless of case, is **not allowed**.  
   </box>
 
@@ -231,6 +232,7 @@ Updates the contact information of a participant in the app.
 * `<phone number>` should be **numeric**, **non-empty** and **not longer than 15 digits**.
 * `<email>` should be **alphanumeric**, **non-empty** and **not longer than 64 characters**.
 * `<address>` should be **non-empty** and **not longer than 64 characters**.
+* `<tag>` should be **not longer than 64 characters**.
   </box>
   
 **Examples:**
