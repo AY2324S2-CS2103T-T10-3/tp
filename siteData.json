@@ -50,6 +50,7 @@
         "storage-component": "Storage component",
         "common-classes": "Common classes",
         "implementation": "Implementation",
+        "add-person-to-global-participant-list": "Add person to Global Participant List",
         "invite-person-to-event": "Invite Person to Event",
         "delete-participant": "Delete Participant",
         "select-event-feature": "Select Event Feature",
