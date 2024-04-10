@@ -294,7 +294,8 @@ Exports only the chosen details of all filtered persons to a CSV file.
 
 **Description:**
 
-Clears all entries from the address book.
+- Clears all entries from the address book.
+- If the first word of a command is `help`, the rest of command will be automatically ignored by Eventy.
 
 **Caution:**
 
@@ -347,7 +348,8 @@ Clears all entries from the address book.
 
 **Description:**
 
-Shows a message explaining how to access the help page.
+- Shows a message explaining how to access the help page.
+- If the first word of a command is `help`, the rest of command will be automatically ignored by Eventy.
 
 ![help message](images/helpMessage.png)
 
