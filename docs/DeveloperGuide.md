@@ -402,14 +402,24 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 | Priority | As a …​                                    | I want to …​                 | So that I can…​                                                        |
 |----------|--------------------------------------------|------------------------------|------------------------------------------------------------------------|
-| `* * *`  | user                                       | create a new event           | plan and manage all the events that in one place                       |
-| `* * *`  | user                                       | add a new person             | manage all my contacts in one place                                    |
-| `* * *`  | user                                       | add participant to an event  | manage and plan all the participant for a specific event               |
-| `* * *`  | user                                       | delete a person              | remove contacts that I no longer need                                  |
-| `* * *`  | user                                       | remove specific participant  | remove a specific participant from a specific event                    |
-| `* *`    | diligent user                              | edit contact information     | update contact information whenever necessary                          |
-| `* *`    | user                                       | select a specific event      | search events by name without having to manually search
-
+| `* * *`  | user                                       | create a new event            | plan and manage all the events in one place                            |
+| `* * *`  | user                                       | add a new person              | manage all my contacts in one place                                    |
+| `* * *`  | user                                       | invite participant to an event| manage and plan all the participants for a specific event              |
+| `* * *`  | user                                       | delete a person               | remove contacts that I no longer need                                  |
+| `* * *`  | user                                       | remove specific participant   | remove a specific participant from a specific event                    |
+| `* * *`  | diligent user                              | edit contact number           | update contact number                                                  |
+| `* *`    | user                                       | select a specific event       | Perform actions on the desired event                                   |
+| `* *`    | organized user                             | filter contacts by tags       | view the list of contacts or invitees in a specific category           |
+| `* *`    | organized user                             | export filtered contacts      | quickly view consolidated information in CSV file format              |
+| `* *`    | user                                       | delete an event               | remove past or irrelevant events                                       |
+| `* *`    | user                                       | edit an event                 | update event information like the event name or event date             |
+| `* *`    | user                                       | deselect an event             | perform app-wide events                                                |
+| `* *`    | busy user                                  | clear all entries             | replace them with more relevant contacts without cluttering the app    |
+| `* *`    | user                                       | exit the program              | exit the program in a safe manner                                      |
+| `* *`    | user                                       | list invitees or contacts     | have a consolidated view of the invitees/contacts in the app           |
+| `* *`    | diligent user                              | update contact email          | keep track of the contact’s latest email                               |
+| `* *`    | diligent user                              | update contact address        | keep track of the contact’s latest address                             |
+| `* *`    | diligent user                              | update contact tags           | update the user’s tag labels when he/she is placed in a new category   
 
 ### Use cases
 
