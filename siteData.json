@@ -56,6 +56,7 @@
         "find-person-feature": "Find Person Feature",
         "select-event-feature": "Select Event Feature",
         "delete-event-feature": "Delete Event Feature",
+        "export-participant-data-feature": "Export Participant Data Feature",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
