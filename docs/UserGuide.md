@@ -264,7 +264,7 @@ After `inv 5`:
 ![after inviting participant](images/afterinvite.png)
 
 #### 3.2.3 Deleting a participant from the global participant list or an event participant list: `delp`
-- 
+
 - If **no event is selected**, this deletes the person from only the **global participant list**, but the person will
   remain in all the events he/she will be taking or has taken part in.
 - If **an event is selected**, this only removes the participant from the event by **his/her index in the
