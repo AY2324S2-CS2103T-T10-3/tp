@@ -92,7 +92,7 @@
         "enhancement-6-editing-with-the-same-input-shows-a-check": "Enhancement 6: Editing with the same input shows a check",
         "enhancement-7-deselecting-an-event-with-no-event-selected-shows-a-correct-error-message": "Enhancement 7: Deselecting an event with no event selected shows a correct error message",
         "enhancement-8-selecting-the-same-selected-event-shows-a-correct-error-message": "Enhancement 8: Selecting the same selected event shows a correct error message",
-        "enhancement-9-exporting-with-invalid-flag-flags-shows-a-correct-error-message": "Enhancement 9: Exporting with invalid flag/flags shows a correct error message",
+        "enhancement-9-adding-an-event-command-s-error-message-does-not-have-the-proper-line-breaks": "Enhancement 9: Adding an event command's error message does not have the proper line breaks",
         "enhancement-10-exporting-with-file-permission-issues-shows-a-correct-error-message": "Enhancement 10: Exporting with file permission issues shows a correct error message",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "1-launch-and-shutdown": "1. Launch and shutdown",
